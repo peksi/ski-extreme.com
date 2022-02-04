@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 					<li>Joka kolmas päivä voi juoda kaljaa</li>
 					<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
 					<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
-					<li>Lounas syödään laitoksessa (EI à la carte)</li>
+					<li>Lounas syödään laitoksessa</li>
 					<li>Lempijuomasi on Red Panaché</li>
 					<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
 					<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
