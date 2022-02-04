@@ -30,8 +30,8 @@ const Home: NextPage = () => {
           <li>Red panache on jumalten juoma</li>
           <li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
           <li>Joka reissulla katsotaan Apocalypse Snow 1-3</li>
-          <li>Mutta ensin, chi-chi</li>
           <li>Ei lautailijoita</li>
+          <li>Mutta ensin, chi-chi</li>
         </ol>
       </main>
 
