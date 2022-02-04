@@ -16,17 +16,17 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Ski Extreme</h1>
+        <h1 className={styles.title}>SKI EXTREME</h1>
 
         <h2>Pyhät säännöt</h2>
-        <ol>
+        <ol className={styles.manifesto}>
           <li>
-            Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia.
+            Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia
           </li>
           <li>Joka kolmas päivä olkoon känni</li>
           <li>Philippe ei ole teretullut</li>
-          <li>Ilman kaatumista ei ole yritystä</li>
-          <li>Sallitut brändit: Arcteryx, Norrona. Ei muita</li>
+          <li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
+          <li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
           <li>Red panache on jumalten juoma</li>
           <li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
           <li>Joka reissulla katsotaan Apocalypse Snow 1-3</li>
