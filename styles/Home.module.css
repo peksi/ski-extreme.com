@@ -114,3 +114,7 @@
     flex-direction: column;
   }
 }
+
+.manifesto {
+  font-family: "Courier New", Courier, monospace;
+}
