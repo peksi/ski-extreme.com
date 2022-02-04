@@ -16,8 +16,8 @@ const Home: NextPage = () => {
             </Head>
             <main className={styles.main}>
                 <h1 className={styles.title}>Ski Extreme</h1>
-                <h2>Pyhät säännöt</h2>
-                <ol>
+                  <h2>Manifesto</h2>
+                  <ol className={styles.manifesto}>
                     <li>
                         Kaikki, jotka eivät laske frame-siteillä ovat{' '}
                         <a href='https://fi.linkedin.com/in/luukascastren'>
