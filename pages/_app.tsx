@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         h="70vh"
         zIndex="-1"
         position="absolute"
-        bg="blue.100"
+        bg="blue.50"
       ></Box>
       <Box
         w="100vw"
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         top="70vh"
         zIndex="-1"
         position="absolute"
-        bgGradient={["linear(to-b, blue.100, blue.300)"]}
+        bgGradient={["linear(to-b, blue.50, blue.200)"]}
       ></Box>
 
       <Component {...pageProps} />
