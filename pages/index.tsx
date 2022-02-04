@@ -17,7 +17,6 @@ const Home: NextPage = () => {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>Ski Extreme</h1>
-
                 <h2>Pyhät säännöt</h2>
                 <ol>
                     <li>
@@ -27,7 +26,7 @@ const Home: NextPage = () => {
                         </a>
                     </li>
                     <li>Joka kolmas päivä olkoon känni</li>
-                    <li>Philippe ei ole teretullut</li>
+                    <li>Philippe ei ole tervetullut</li>
                     <li>Ilman kaatumista ei ole yritystä</li>
                     <li>Sallitut brändit: Arcteryx, Norrona. Ei muita</li>
                     <li>Red panache on jumalten juoma</li>
@@ -53,7 +52,6 @@ const Home: NextPage = () => {
                     </li>
                 </ol>
             </main>
-
             <footer className={styles.footer}>
                 <a
                     href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
