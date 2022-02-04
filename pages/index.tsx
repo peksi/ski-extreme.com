@@ -27,7 +27,16 @@ const Home: NextPage = () => {
           <li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
           <li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
           <li>Red panache on jumalten juoma</li>
-          <li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
+          <li>
+            Erimielisyydet ratkaistaan{" "}
+            <a
+              href="https://www.youtube.com/watch?v=_Qe3HBqFhTU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kiinalaisella alamäellä
+            </a>
+          </li>
           <li>
             Joka reissulla katsotaan Apocalypse Snow{" "}
             <a
