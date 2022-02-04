@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Ski Extreme</title>
         <meta
           name="description"
-          content="For the believeable ski heros who ski the exreme"
+          content="For the believeable ski heroes who ski the exreme"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
