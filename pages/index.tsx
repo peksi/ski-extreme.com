@@ -17,19 +17,43 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>SKI EXTREME</h1>
-
-        <h2>Pyhät säännöt</h2>
+        <h2>Manifesto</h2>
         <ol className={styles.manifesto}>
           <li>
             Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia
           </li>
-          <li>Joka kolmas päivä olkoon känni</li>
-          <li>Philippe ei ole teretullut</li>
+          <li>Joka kolmas päivä saa juoda kaljaa</li>
+          <li>Philippe ei ole tervetullut</li>
           <li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
           <li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
           <li>Red panache on jumalten juoma</li>
           <li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
-          <li>Joka reissulla katsotaan Apocalypse Snow 1-3</li>
+          <li>
+            Joka reissulla katsotaan Apocalypse Snow{" "}
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=rbdUEOyryeg"
+              rel="noopener noreferrer"
+            >
+              I
+            </a>
+            ,{" "}
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=pdO-jllFqmA"
+              rel="noopener noreferrer"
+            >
+              II
+            </a>{" "}
+            ja{" "}
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=n4A7ssN2xy0"
+              rel="noopener noreferrer"
+            >
+              III
+            </a>
+          </li>
           <li>Ei lautailijoita</li>
           <li>Mutta ensin, chi-chi</li>
         </ol>
