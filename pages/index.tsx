@@ -16,8 +16,8 @@ const Home: NextPage = () => {
             </Head>
             <main className={styles.main}>
                 <h1 className={styles.title}>Ski Extreme</h1>
-                  <h2>Manifesto</h2>
-                  <ol className={styles.manifesto}>
+                <h2>Manifesto</h2>
+                <ol className={styles.manifesto}>
                     <li>
                         Kaikki, jotka eivät laske frame-siteillä ovat{' '}
                         <a href='https://fi.linkedin.com/in/luukascastren'>
@@ -37,9 +37,29 @@ const Home: NextPage = () => {
                         </a>
                     </li>
                     <li>
-                        Joka reissulla katsotaan{' '}
-                        <a href='https://www.youtube.com/watch?v=rbdUEOyryeg&t=749s'>
-                            Apocalypse Snow 1-3
+                        Joka reissulla katsotaan Apocalypse Snow{' '}
+                        <a
+                            target='_blank'
+                            href='https://www.youtube.com/watch?v=rbdUEOyryeg'
+                            rel='noopener noreferrer'
+                        >
+                            I
+                        </a>
+                        ,{' '}
+                        <a
+                            target='_blank'
+                            href='https://www.youtube.com/watch?v=pdO-jllFqmA'
+                            rel='noopener noreferrer'
+                        >
+                            II
+                        </a>{' '}
+                        ja{' '}
+                        <a
+                            target='_blank'
+                            href='https://www.youtube.com/watch?v=n4A7ssN2xy0'
+                            rel='noopener noreferrer'
+                        >
+                            III
                         </a>
                     </li>
                     <li>Ei lautailijoita</li>
