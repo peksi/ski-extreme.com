@@ -28,7 +28,32 @@ const Home: NextPage = () => {
           <li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
           <li>Red panache on jumalten juoma</li>
           <li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
-          <li>Joka reissulla katsotaan Apocalypse Snow 1-3</li>
+          <li>
+            Joka reissulla katsotaan Apocalypse Snow{" "}
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=rbdUEOyryeg"
+              rel="noopener noreferrer"
+            >
+              I
+            </a>
+            ,{" "}
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=pdO-jllFqmA"
+              rel="noopener noreferrer"
+            >
+              II
+            </a>{" "}
+            ja{" "}
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=n4A7ssN2xy0"
+              rel="noopener noreferrer"
+            >
+              III
+            </a>
+          </li>
           <li>Ei lautailijoita</li>
           <li>Mutta ensin, chi-chi</li>
         </ol>
