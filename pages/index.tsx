@@ -54,7 +54,7 @@ const Home: NextPage = () => {
 						alt="mountFg"
 					/>
 				</Parallax>
-				<Parallax translateY={150}>
+				<Parallax speed={150}>
 					<img
 						className={styles.mtnPic}
 						src="https://assets.codepen.io/721952/cloud3.png"
@@ -70,29 +70,6 @@ const Home: NextPage = () => {
 			<Parallax speed={200} style={{ position: 'relative', zIndex: 15 }}>
 				<Box height="100vh" w="100vw" bg="white" mt="-75.5vh">
 					<main className={styles.main}>
-						<h2>MANIFESTO</h2>
-						<ol className={styles.manifesto}>
-							<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
-							<li>Joka kolmas päivä voi juoda kaljaa</li>
-							<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
-							<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
-							<li>Lounas syödään laitoksessa (EI à la carte)</li>
-							<li>Lempijuomasi on Red Panaché</li>
-							<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
-							<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
-							<li>Ei lautailijoita</li>
-							<li>
-								Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon (mutta ensin,
-								chi-chi)
-							</li>
-						</ol>
-					</main>
-				</Box>
-			</Parallax>
-			<Parallax translateY={[200, -200]}>
-				<Box height="100vh" w="100vw" bg="white">
-					<main className={styles.main}>
-						<h1 className={styles.title}>SKI EXTREME</h1>
 						<h2>MANIFESTO</h2>
 						<ol className={styles.manifesto}>
 							<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
