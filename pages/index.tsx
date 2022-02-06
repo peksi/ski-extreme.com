@@ -21,14 +21,14 @@ const Home: NextPage = () => {
 				<Parallax speed={20}>
 					<img
 						className={styles.mtnPic}
-						style={{ position: 'relative' }}
+						style={{ position: 'relative', objectFit: 'cover' }}
 						src="https://assets.codepen.io/721952/mountBg.png"
 					/>
 				</Parallax>
 				<Parallax speed={50}>
 					<img
 						className={styles.mtnPic}
-						style={{ position: 'relative' }}
+						style={{ position: 'relative', objectFit: 'cover' }}
 						src="https://assets.codepen.io/721952/mountMg.png"
 						alt="mountMg"
 					/>
@@ -36,6 +36,7 @@ const Home: NextPage = () => {
 				<Parallax speed={100}>
 					<img
 						className={styles.mtnPic}
+						style={{ position: 'relative', objectFit: 'cover' }}
 						src="https://assets.codepen.io/721952/mountFg.png"
 						alt="mountFg"
 					/>
@@ -43,6 +44,7 @@ const Home: NextPage = () => {
 				<Parallax speed={200}>
 					<img
 						className={styles.mtnPic}
+						style={{ position: 'relative', objectFit: 'cover' }}
 						src="https://assets.codepen.io/721952/cloud1.png"
 						alt="mountFg"
 					/>
@@ -50,6 +52,7 @@ const Home: NextPage = () => {
 				<Parallax speed={150}>
 					<img
 						className={styles.mtnPic}
+						style={{ position: 'relative', objectFit: 'cover' }}
 						src="https://assets.codepen.io/721952/cloud2.png"
 						alt="mountFg"
 					/>
@@ -57,6 +60,7 @@ const Home: NextPage = () => {
 				<Parallax speed={150}>
 					<img
 						className={styles.mtnPic}
+						style={{ position: 'relative', objectFit: 'cover' }}
 						src="https://assets.codepen.io/721952/cloud3.png"
 						alt="mountFg"
 					/>
