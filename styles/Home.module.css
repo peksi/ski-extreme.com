@@ -5,6 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	pointer-events: none;
 	align-items: center;
 }
 
@@ -104,13 +105,6 @@
 	margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-	.grid {
-		width: 100%;
-		flex-direction: column;
-	}
-}
-
 .manifesto {
 	margin-top: 40px;
 	padding: 20px;
@@ -126,6 +120,33 @@
 	height: 100vh;
 	margin-top: -100vh;
 	top: 0;
+	pointer-events: none;
 	left: 0;
 	z-index: -1;
+}
+
+.skier {
+	position: absolute;
+	z-index: 2;
+	width: 150px;
+	height: 150px;
+	bottom: 45%;
+	right: 80%;
+	background-image: url('/skier.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
+	.skier {
+		width: 10em;
+		height: 10em;
+		bottom: 25%;
+		right: 50%;
+	}
 }

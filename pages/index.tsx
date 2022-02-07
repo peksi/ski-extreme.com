@@ -1,11 +1,20 @@
+import { useState, useEffect } from 'react';
 import { Box, Heading } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import { Parallax, useParallax } from 'react-scroll-parallax';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
+	const [audio, setAudio] = useState(false);
+
+	const toggleAudio = () => {
+		setAudio(!audio);
+		// get audio element and play/pause
+		const audioElement = document.getElementById('audio') as HTMLAudioElement;
+		audioElement.paused ? audioElement.play() : audioElement.pause();
+	};
+
 	return (
 		<Box h="100vh">
 			<Head>
@@ -18,12 +27,31 @@ const Home: NextPage = () => {
 					style={{ position: 'relative', height: '100vh', width: '100vw' }}
 					src="https://assets.codepen.io/721952/sky.jpg"
 				/>
+				<button
+					className={styles.skier}
+					style={
+						audio
+							? {
+									transform: 'translate3d(0, 0, 100px) rotate3d(0, 1, 0, 180deg)',
+									WebkitTransform: 'translate3d(0, 0, 100px) rotate3d(0, 1, 0, 180deg)',
+							  }
+							: {}
+					}
+					onClick={toggleAudio}
+				/>
 				<Parallax speed={20}>
-					<img
-						className={styles.mtnPic}
-						style={{ position: 'relative', objectFit: 'cover' }}
-						src="https://assets.codepen.io/721952/mountBg.png"
-					/>
+					<div>
+						<img
+							className={styles.mtnPic}
+							style={{ position: 'relative', objectFit: 'cover' }}
+							src="https://assets.codepen.io/721952/mountBg.png"
+						/>
+						<audio id="audio" loop>
+							<source src="/ski.opus" type="audio/ogg" />
+							<source src="/ski.mp3" type="audio/mpeg" />
+							Your browser does not support the audio element.
+						</audio>
+					</div>
 				</Parallax>
 				<Parallax speed={50}>
 					<img
