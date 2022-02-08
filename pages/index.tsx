@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 		<Box h="100vh">
 			<Head>
 				<title>Ski Extreme</title>
-				<meta name="description" content="For the believeable ski heros who ski the exreme" />
+				<meta name="description" content="For the believeable ski heroes who ski the extreme" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Box position="relative" zIndex={2} height="100vh" width="100vw">
