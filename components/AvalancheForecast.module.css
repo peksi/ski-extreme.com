@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: stretch;
+    position: relative;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.boxSelected {
+    outline: 2px solid black;
+    outline-offset: -2px;
+}
+
