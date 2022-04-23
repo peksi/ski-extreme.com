@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Collapse, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Collapse, Container, Heading, Text } from '@chakra-ui/react';
 import styles from './ExtremeOMeter.module.css';
 
 export interface ExtremeOMeterProps {
@@ -28,9 +28,9 @@ const ExtremeOMeter = (props: ExtremeOMeterProps) => {
 			case 4:
 				return 'Responsible skiing';
 			case 5:
-				return 'Minor risk';
+				return 'Low risk';
 			case 6:
-				return 'Moderate risk';
+				return 'Increased risk';
 			case 7:
 				return 'Extreme';
 			case 8:
@@ -58,40 +58,42 @@ const ExtremeOMeter = (props: ExtremeOMeterProps) => {
 
 	return (
 		<Box className={styles.wrapper} bg="gray.200">
-			<Box className={styles.top} maxWidth="600" margin="0 auto">
-				{!value ? (
-					<Text>We need some more information to give you an Extreme-o-rating!</Text>
-				) : (
-					<>
-						<Text fontWeight="bold">
-							{value}: {getTitle()}
-						</Text>
-						<Text>{getDescription()}</Text>
-					</>
-				)}
-			</Box>
-			<Collapse in={!!value}>
-				<Box p="2">
-					<Box className={styles.scale}>
-						<Box className={styles.scaleFrame} borderColor="gray.400">
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-							<Box className={styles.scaleSeparator} bg="gray.400" />
-						</Box>
-						<Box className={styles.progress} bg={COLORS[value]} width={`${100 * (value / 8)}%`}>
-							<Text className={styles.value} color="white" fontWeight="bold">
-								{value || ''}
+			<Container>
+				<Box className={styles.top} maxWidth="600" margin="0 auto">
+					{!value ? (
+						<Text>We need some more information to give you an Extreme-o-rating!</Text>
+					) : (
+						<>
+							<Text fontWeight="bold">
+								{value}: {getTitle()}
 							</Text>
+							<Text>{getDescription()}</Text>
+						</>
+					)}
+				</Box>
+				<Collapse in={!!value}>
+					<Box p="2">
+						<Box className={styles.scale}>
+							<Box className={styles.scaleFrame} borderColor="gray.400">
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+								<Box className={styles.scaleSeparator} bg="gray.400" />
+							</Box>
+							<Box className={styles.progress} bg={COLORS[value]} width={`${100 * (value / 8)}%`}>
+								<Text className={styles.value} color="white" fontWeight="bold">
+									{value || ''}
+								</Text>
+							</Box>
 						</Box>
 					</Box>
-				</Box>
-			</Collapse>
+				</Collapse>
+			</Container>
 		</Box>
 	);
 };
