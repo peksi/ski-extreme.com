@@ -118,11 +118,12 @@
 .mtnPic {
 	width: 100vw;
 	height: 100vh;
-	margin-top: -100vh;
+	position: absolute;
+	object-fit: cover;
+	/* margin-top: -100vh; */
 	top: 0;
 	pointer-events: none;
 	left: 0;
-	z-index: -1;
 }
 
 .skier {

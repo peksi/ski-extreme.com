@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Container, Heading } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Parallax, useParallax } from 'react-scroll-parallax';
@@ -39,88 +39,65 @@ const Home: NextPage = () => {
 					}
 					onClick={toggleAudio}
 				/>
-				<Parallax speed={20}>
-					<div>
-						<img
-							className={styles.mtnPic}
-							style={{ position: 'relative', objectFit: 'cover' }}
-							src="https://assets.codepen.io/721952/mountBg.png"
-						/>
-						<audio id="audio" loop>
-							<source src="/ski.opus" type="audio/ogg" />
-							<source src="/ski.mp3" type="audio/mpeg" />
-							Your browser does not support the audio element.
-						</audio>
-					</div>
-				</Parallax>
-				<Parallax speed={50}>
-					<img
-						className={styles.mtnPic}
-						style={{ position: 'relative', objectFit: 'cover' }}
-						src="https://assets.codepen.io/721952/mountMg.png"
-						alt="mountMg"
-					/>
-				</Parallax>
-				<Parallax speed={100}>
-					<img
-						className={styles.mtnPic}
-						style={{ position: 'relative', objectFit: 'cover' }}
-						src="https://assets.codepen.io/721952/mountFg.png"
-						alt="mountFg"
-					/>
-				</Parallax>
-				<Parallax speed={200}>
-					<img
-						className={styles.mtnPic}
-						style={{ position: 'relative', objectFit: 'cover' }}
-						src="https://assets.codepen.io/721952/cloud1.png"
-						alt="mountFg"
-					/>
-				</Parallax>
-				<Parallax speed={150}>
-					<img
-						className={styles.mtnPic}
-						style={{ position: 'relative', objectFit: 'cover' }}
-						src="https://assets.codepen.io/721952/cloud2.png"
-						alt="mountFg"
-					/>
-				</Parallax>
-				<Parallax speed={150}>
-					<img
-						className={styles.mtnPic}
-						style={{ position: 'relative', objectFit: 'cover' }}
-						src="https://assets.codepen.io/721952/cloud3.png"
-						alt="mountFg"
-					/>
-				</Parallax>
+				<div>
+					<img className={styles.mtnPic} src="https://assets.codepen.io/721952/mountBg.png" />
+					<audio id="audio" loop>
+						<source src="/ski.opus" type="audio/ogg" />
+						<source src="/ski.mp3" type="audio/mpeg" />
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+				<img
+					className={styles.mtnPic}
+					src="https://assets.codepen.io/721952/mountMg.png"
+					alt="mountMg"
+				/>
+				<img
+					className={styles.mtnPic}
+					src="https://assets.codepen.io/721952/mountFg.png"
+					alt="mountFg"
+				/>
+				<img
+					className={styles.mtnPic}
+					src="https://assets.codepen.io/721952/cloud1.png"
+					alt="mountFg"
+				/>
+				<img
+					className={styles.mtnPic}
+					src="https://assets.codepen.io/721952/cloud2.png"
+					alt="mountFg"
+				/>
+				<img
+					className={styles.mtnPic}
+					src="https://assets.codepen.io/721952/cloud3.png"
+					alt="mountFg"
+				/>
 			</Box>
 			<Box position="absolute" top={0} zIndex={15} w="100%" textAlign="center">
 				<Heading size="4xl" color="white" mt={8}>
 					SKI EXTREME
 				</Heading>
 			</Box>
-			<Parallax speed={200} style={{ position: 'relative', zIndex: 15 }}>
-				<Box height="100vh" w="100vw" bg="white" mt="-75.5vh">
-					<main className={styles.main}>
-						<h2>MANIFESTO</h2>
-						<ol className={styles.manifesto}>
-							<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
-							<li>Joka kolmas päivä voi juoda kaljaa</li>
-							<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
-							<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
-							<li>Lounas syödään laitoksessa (EI à la carte)</li>
-							<li>Lempijuomasi on Red Panaché</li>
-							<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
-							<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
-							<li>Ei lautailijoita</li>
-							<li>
-								Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon (mutta ensin,
-								chi-chi)
-							</li>
-						</ol>
-					</main>
-				</Box>
-			</Parallax>
+			<Box>
+				<Container pt={20} pb={200}>
+					<Heading>MANIFESTO</Heading>
+					<ol className={styles.manifesto}>
+						<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
+						<li>Joka kolmas päivä voi juoda kaljaa</li>
+						<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
+						<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
+						<li>Lounas syödään laitoksessa (EI à la carte)</li>
+						<li>Lempijuomasi on Red Panaché</li>
+						<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
+						<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
+						<li>Ei lautailijoita</li>
+						<li>
+							Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon (mutta ensin,
+							chi-chi)
+						</li>
+					</ol>
+				</Container>
+			</Box>
 		</Box>
 	);
 };
