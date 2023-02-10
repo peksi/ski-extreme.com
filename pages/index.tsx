@@ -85,6 +85,7 @@ const Home: NextPage = () => {
 						<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
 						<li>Ei lautailijoita</li>
 						<li>Joka kolmas päivä saa riipaista</li>
+						<li>Myös riipaistessa ryhmäkuri säilyy</li>
 						<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
 						<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
 						<li>Jos tarjolla on laitos, lounas syödään siellä</li>
