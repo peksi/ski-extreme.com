@@ -83,14 +83,14 @@ const Home: NextPage = () => {
 					<Heading>MANIFESTO</Heading>
 					<ol className={styles.manifesto}>
 						<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
-						<li>Joka kolmas päivä voi juoda kaljaa</li>
+						<li>Ei lautailijoita</li>
+						<li>Joka kolmas päivä saa riipaista</li>
 						<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
 						<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
 						<li>Jos tarjolla on laitos, lounas syödään siellä</li>
-						<li>Lempijuomasi on Red Panaché</li>
 						<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
 						<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
-						<li>Ei lautailijoita</li>
+						<li>Puutteellinen lumiturvavarustus johtaa rangaistukseen</li>
 						<li>Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon</li>
 					</ol>
 				</Container>
