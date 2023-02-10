@@ -136,7 +136,7 @@ const SnowSafety: NextPage = () => {
 					</Text>
 					<RadioGroup value={easyToNavigate ?? undefined} onChange={setEasyToNavigate}>
 						<Stack>
-							<Radio value="yes">It's possible to stay on the route in any visibility</Radio>
+							<Radio value="yes">It is possible to stay on the route in any visibility</Radio>
 							<Radio value="no">
 								Staying on the planned route requires precise navigation and/or good visibility
 							</Radio>
