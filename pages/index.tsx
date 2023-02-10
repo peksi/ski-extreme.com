@@ -89,6 +89,7 @@ const Home: NextPage = () => {
 						<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
 						<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
 						<li>Jos tarjolla on laitos, lounas syödään siellä</li>
+						<li>Jos hissistä vaaditaan droppia, se on suoritettava</li>
 						<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
 						<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
 						<li>Puutteellinen lumiturvavarustus johtaa rangaistukseen</li>
