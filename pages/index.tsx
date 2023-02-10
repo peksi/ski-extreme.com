@@ -86,15 +86,12 @@ const Home: NextPage = () => {
 						<li>Joka kolmas päivä voi juoda kaljaa</li>
 						<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
 						<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
-						<li>Lounas syödään laitoksessa (EI à la carte)</li>
+						<li>Jos tarjolla on laitos, lounas syödään siellä</li>
 						<li>Lempijuomasi on Red Panaché</li>
 						<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
 						<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
 						<li>Ei lautailijoita</li>
-						<li>
-							Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon (mutta ensin,
-							chi-chi)
-						</li>
+						<li>Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon</li>
 					</ol>
 				</Container>
 			</Box>
