@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
 import { Box, Container, Heading } from '@chakra-ui/react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Parallax, useParallax } from 'react-scroll-parallax';
+import { useEffect, useState } from 'react';
+
+import Head from 'next/head';
+import type { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -84,16 +85,15 @@ const Home: NextPage = () => {
 					<ol className={styles.manifesto}>
 						<li>Kaikki, jotka eivät laske frame-siteillä ovat nössöjä kanankoipia</li>
 						<li>Ei lautailijoita</li>
-						<li>Joka kolmas päivä saa riipaista</li>
+						<li>Joka kolmas päivä voi riipaista</li>
 						<li>Myös riipaistessa ryhmäkuri säilyy</li>
 						<li>Jos et ikinä kaadu, et yritä tarpeeksi</li>
 						<li>Jos kaadut liian usein, polta suksesi tynnyrissä</li>
-						<li>Jos tarjolla on laitos, lounas syödään siellä</li>
+						<li>Konfliktitilanteessa laitos sekä mutteri voittavat muut vaihtoehdot</li>
 						<li>Jos hissistä vaaditaan droppia, se on suoritettava</li>
-						<li>Erimielisyydet ratkaistaan Kiinalaisella alamäellä</li>
 						<li>Jokaisella reissulla katsotaan Apocalypse Snow I, II, III</li>
-						<li>Puutteellinen lumiturvavarustus johtaa rangaistukseen</li>
-						<li>Jos käyttäydyt Manifeston vastaisesti, otetaan suksesi takavarikkoon</li>
+						<li>Puutteellinen lumiturvavarustus häpäisee koko porukan, siitä seuraa rangaistus: kierros after ski -oluita</li>
+						<li>Jos käyttäydyt Manifeston vastaisesti, heimoneuvosto päättää toimenpiteistä</li>
 					</ol>
 				</Container>
 			</Box>
